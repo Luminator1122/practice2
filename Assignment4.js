@@ -68,8 +68,40 @@ function calcFactorial(inputdata) {
 var sum = calcFactorial(4);
 console.log(sum);
 console.log("***********");
-// Q No.6.	Write a program having an array of numbers if the number is negative it should remove the negative 
-// number from the array.
+// Q No.6.	Write a program having an array of numbers if the number is negative it 
+//should remove the negative  number from the array.
+var arrayoFNumbers = [1, -2, 3, 4, -5, -6, -7, 8, -9, 10, -11, -12, -13, 14, -15];
+for (let i = 0; i < arrayoFNumbers.length; i++) {
+    if (arrayoFNumbers[i] < 0) // < or > signs can be used for negative  or positive numbers to take output
+     {
+        arrayoFNumbers.splice(i, 1);
+        i--; //this command brinigs back the i value to  previous index value of the array in case of consecutive negative or positive numbers
+    }
+}
+console.log(arrayoFNumbers);
+console.log("***********");
+// multiply  each array element  
+var arrayoFNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var sum = 0;
+for (let i = 0; i < arrayoFNumbers.length; i++) {
+    sum = sum + arrayoFNumbers[i];
+}
+console.log(sum);
+console.log("***********");
+var arrayoFNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (let i = 0; i < arrayoFNumbers.length; i++) {
+    arrayoFNumbers[i] = arrayoFNumbers[i] + arrayoFNumbers[i];
+}
+console.log(arrayoFNumbers);
+console.log("565656565655655555");
+var arrayofsum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var totalsum = 0;
+var index = 0;
+while (index < arrayofsum.length) {
+    totalsum = totalsum + arrayofsum[index];
+    index++;
+}
+console.log(totalsum);
 // Q No.7.	Create a function that takes an array of numbers as parameter. Use a while loop to calculate and return 
 // the sum of all the numbers in the array.
 // Q No.8.	Implement a program that takes a list of temperatures in Celsius as input from the user. Convert each 	temperature to Fahrenheit using the formula F = (C * 9/5) + 32 and store the converted temperatures in 	an array. Use a while loop to perform the conversion for each temperature.
