@@ -43,8 +43,31 @@ while (evenNumbers < 10) {
     }
     allNumbers++;
 }
-// Q No.5.	Create a function that takes a positive integer as parameter and uses a while loop to calculate and 
-// return the factorial of that number.
+console.log("************************");
+// Q No.5.	Create a function that takes a positive integer as parameter and uses a while loop
+// to calculate and return the factorial of that number.
+function factorialofNumber(factorNumber) {
+    var multiplier = 1;
+    while (factorNumber > 0) {
+        multiplier = factorNumber * multiplier;
+        factorNumber--;
+    }
+    return multiplier;
+}
+var result = factorialofNumber(6);
+console.log(result);
+console.log("**************");
+function calcFactorial(inputdata) {
+    var multiplier = 1;
+    while (inputdata > 0) {
+        multiplier = multiplier * inputdata;
+        inputdata--;
+    }
+    return multiplier;
+}
+var sum = calcFactorial(4);
+console.log(sum);
+console.log("***********");
 // Q No.6.	Write a program having an array of numbers if the number is negative it should remove the negative 
 // number from the array.
 // Q No.7.	Create a function that takes an array of numbers as parameter. Use a while loop to calculate and return 

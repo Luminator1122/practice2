@@ -53,16 +53,44 @@ while (evenNumbers<10)
     }
     allNumbers++
 }
-
+console.log("************************")
 // Q No.5.	Create a function that takes a positive integer as parameter and uses a while loop
 // to calculate and return the factorial of that number.
 
+function factorialofNumber(factorNumber:number)
+{
+    var multiplier:number=1
+    while (factorNumber>0)
+    {
+    multiplier=factorNumber*multiplier
+    factorNumber--
+    }
+return multiplier
+}
+var result:number=factorialofNumber(6)
+console.log(result)
+console.log("**************")
+
+
+function calcFactorial(inputdata:number)
+{
+var multiplier:number=1
+while (inputdata>0)
+    {
+    multiplier=multiplier*inputdata
+    inputdata--    
+    }
+return multiplier
+}
+var sum:number=calcFactorial(4)
+console.log(sum)
+console.log("***********")
+
+// Q No.6.	Write a program having an array of numbers if the number is negative it 
+//should remove the negative  number from the array.
 
 
 
-
-// Q No.6.	Write a program having an array of numbers if the number is negative it should remove the negative 
-// number from the array.
 // Q No.7.	Create a function that takes an array of numbers as parameter. Use a while loop to calculate and return 
 // the sum of all the numbers in the array.
 // Q No.8.	Implement a program that takes a list of temperatures in Celsius as input from the user. Convert each 	temperature to Fahrenheit using the formula F = (C * 9/5) + 32 and store the converted temperatures in 	an array. Use a while loop to perform the conversion for each temperature.
